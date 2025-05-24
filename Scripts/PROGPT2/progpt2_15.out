@@ -1,0 +1,34 @@
+Starting
+Sat May 17 08:24:54 AM EDT 2025
+/projects/intro2gds/LLMOMG/Scripts/PROGPT2/progpt2_15.py:184: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_model_path))
+Epoch 1 | Train Acc: 0.5708 | Dev Acc: 0.8800 | Dev F1: 0.8793
+Best model saved.
+Epoch 2 | Train Acc: 0.9372 | Dev Acc: 0.9458 | Dev F1: 0.9450
+Best model saved.
+Epoch 3 | Train Acc: 0.9742 | Dev Acc: 0.9564 | Dev F1: 0.9545
+Best model saved.
+Epoch 4 | Train Acc: 0.9870 | Dev Acc: 0.9617 | Dev F1: 0.9592
+Best model saved.
+Epoch 5 | Train Acc: 0.9933 | Dev Acc: 0.9643 | Dev F1: 0.9616
+Best model saved.
+Epoch 6 | Train Acc: 0.9969 | Dev Acc: 0.9667 | Dev F1: 0.9647
+Best model saved.
+Epoch 7 | Train Acc: 0.9982 | Dev Acc: 0.9691 | Dev F1: 0.9663
+Best model saved.
+Epoch 8 | Train Acc: 0.9989 | Dev Acc: 0.9692 | Dev F1: 0.9669
+Best model saved.
+Epoch 9 | Train Acc: 0.9994 | Dev Acc: 0.9680 | Dev F1: 0.9654
+Epoch 10 | Train Acc: 0.9996 | Dev Acc: 0.9696 | Dev F1: 0.9664
+Loaded best model for test evaluation.
+TEST Test: Accuracy=0.9513, Precision=0.9495, Recall=0.9519, F1=0.9445
+LT40 Test: Accuracy=0.8869, Precision=0.7825, Recall=0.7821, F1=0.7719
+40_60 Test: Accuracy=0.9275, Precision=0.8952, Recall=0.8919, F1=0.8829
+60_80 Test: Accuracy=0.9623, Precision=0.9482, Recall=0.9513, F1=0.9435
+GT80 Test: Accuracy=0.9756, Precision=0.9373, Recall=0.9349, F1=0.9321
+
+real	1189m36.622s
+user	783m3.925s
+sys	403m36.633s
+Finished
+Sun May 18 04:14:30 AM EDT 2025
