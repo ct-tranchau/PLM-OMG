@@ -44,3 +44,12 @@ git clone https://github.com/ct-tranchau/PLM-OMG.git
 cd PLM-OMG
 pip install -r requirements.txt
 ```
+## Data Availability
+
+The datasets and pretrained models used in this study are openly available via Zenodo:
+
+ **Zenodo DOI**: [10.5281/zenodo.15507407](https://doi.org/10.5281/zenodo.15507407)  
+ This includes:
+- Protein sequence datasets for 15 diverse plant species
+- Monocot and dicot orthogroups from PLAZA 5.0
+- Pretrained model checkpoints for ESM2, ProGen2, ProteinBERT, ProtGPT2, and LSTM
